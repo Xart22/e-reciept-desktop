@@ -1,0 +1,17 @@
+{
+  "name": "e-reciept",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^28.2.0",
+    "electron-prompt": "^1.7.0",
+    "jquery": "^3.7.1"
+  }
+}
