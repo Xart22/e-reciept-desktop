@@ -99,7 +99,7 @@ function createWindow() {
 
   win.loadURL(`http://${ipServer.ip}/e-reciept/public/`);
 
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
 }
 
 app.whenReady().then(() => {
@@ -126,7 +126,8 @@ app.whenReady().then(() => {
             path.join(__dirname, "db.json"),
             JSON.stringify({ ip: r })
           );
-          createWindow();
+          app.relaunch();
+          app.exit();
         }
       })
       .catch(console.error);
